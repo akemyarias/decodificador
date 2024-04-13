@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA- Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de Mensagem</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>DECODIFICADOR DE MENSAGEM</h1>
+    </header>
+
+    <main>
+        <div class="blocos_">
+            <section>
+                <div class="bloco_input">
+                    <textarea id="input_mensagem" placeholder="Digite seu texto" rows="20" cols="56"></textarea>
+                    <p class="input_mensagem_texto"><strong>ATENÇÃO!</strong> Utilize somente <strong>letras minúsculas</strong>
+                     e não coloque nenhum acento ou qualquer outro caracter especial.</p>
+                    <div class="btn_geral">
+                        <button onclick="cripitografar()" class="btn_criptografar">Cripitografar</button>
+                        <button onclick="descriptografar()" class="btn_descriptografar">Descriptografar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="bloco_output">
+                <div>
+                    <img class="img_output" src="/img/images.jpeg">
+                    <textarea id="output" class="output_mensagem" placeholder="Nenhuma mensagem encontrada." rows="14" cols="40"></textarea>
+                    <div class="div-btn-copiar">                    
+                    <button onclick="copiar()" class="btn_copiar">Copiar</button>
+                    </div>
+                </div>                 
+            </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="rodape_icones">
+            <a class="icones" href="https://Linkedin.com/in/akemy-arias">
+            <img src="./img/linkedin-32.png" alt="Icone linkedIn">LinkedIn</a>
+            <a class="icones" href="https://github.com/akemyarias"> 
+            <img src="./img/github-32.png" alt="Icone GitHub">GitHub</a>  
+            <h4 class="texto_rodape">Desenvolvido por Akemy Arias.</h4>
+            <h5 class="texto_rodape"> Esse é meu primeiro projeto com HTML, CSS e JavaScript.</h5>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
