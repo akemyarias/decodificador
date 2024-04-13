@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+
+
+:root
+{
+    --cor-primaria: #f5ddbf;
+    --cor-secundaria:#FA7F08;
+    --cor-terciaria:#f1d7c5;
+
+    --fonte-primaria:"Inter", sans-serif;
+    --fonte-secundaria: "Silkscreen" , sans-serif;
+}
+
+body{
+    background-image: url("./img/fundo2.jpg");
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    font-size: 26px;
+    border-width: 4px solid;
+    width: 66ch;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 2% 1% 1% 2%;
+    animation: typing 2s steps(66),blinking 0.8s infinite step-end alternate;
+}
+@keyframes typing {
+    from{
+        width: 0;
+    }    
+}
+@keyframes blinking {
+    50%{
+        border-color: transparent;
+    }
+    
+}
+.blocos_{
+    display: flex;
+    gap: 7%;
+    margin-top: 3.5%;
+    margin-left: 5%;
+}
+
+.bloco_input{
+    width: 600px;
+    height: 520px;
+}
+
+#input_mensagem{
+    resize: none;
+    font-size: 1.1rem;
+    color: black;
+    background: ghostwhite;
+    border: 4px solid var(--cor-secundaria);
+    border-radius: 3px;
+    outline: 0;
+    padding: 10px;
+    text-transform: lowercase;
+    font-family: var(--fonte-primaria);
+}
+
+.input_mensagem_texto 
+{
+    width: 80%;
+    height: 50px;
+    margin-top: 2%;
+    margin-left: 10% ;
+    font-size: 1rem;
+    text-align: center;
+    color: #f5ddbf;     
+}
+
+.btn_geral{
+    width: 600px;
+    height: 70px;
+}
+
+.btn_criptografar{
+    border: 2px solid var(--cor-secundaria);
+    background-color: var(--cor-secundaria);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    width: 180px;
+    height: 60px;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    cursor: pointer; 
+    padding: 21.5px 0;  
+}
+
+.btn_descriptografar{
+    border: 2px solid var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    width: 180px;
+    height: 60px;
+    font-size: 1rem;
+    margin-top: 1%;
+    margin-left: 15%;
+    margin-bottom: 2% ;
+    cursor: pointer; 
+    padding: 21.5px 0
+}
+
+.btn_descriptografar:hover {
+    transition: 0.5s;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+}
+
+.btn_criptografar:hover {
+    transition: 0.5s;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+}
+
+.bloco_output 
+{
+    width: 500px;
+    height: 600px;
+
+}
+.output_mensagem{
+    resize: none;
+    font-size: 1.1rem;
+    color: black;
+    outline: 0;
+    text-transform: lowercase;
+    font-family: var(--fonte-primaria);
+    margin-top: 0%;
+    border: 4px solid var(--cor-secundaria);
+    border-radius: 3px;
+    background-color: ghostwhite;
+}
+
+.img_output{
+    width: 200px;
+    border: transparent;
+    margin-left: 23%;
+}
+
+.btn_copiar{
+    margin-top: 10%;
+    border: 2px solid var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    width: 180px;
+    height: 60px;
+    font-size: 1rem;
+    margin-left: 25%;
+    margin-bottom: 2% ;
+    cursor: pointer; 
+    padding: 21.5px 0;
+}
+
+.btn_copiar:hover {
+    transition: 0.5s;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+}
+.rodape_icones{
+    margin-top: 6%;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+.icones{
+    display: inline-flex;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    vertical-align: middle; 
+    margin-right: 30px;
+    align-items: center;    
+    gap: 8px;
+}
+
+.texto_rodape{
+    text-align: start;
+    font-size: small;
+}
